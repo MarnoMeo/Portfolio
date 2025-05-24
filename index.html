@@ -1,56 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Portofolio Web Developer</title>
   </head>
   <body>
     <header>
-      <h1>Marno Meo</h1>
-
+      <h1>Portofolio Yohanes Marianus Meo</h1>
       <nav>
-        <table>
-          <tr>
-            <td><a href="#about">Tentang</a> |</td>
-            <td><a href="#skills">Keahlian</a> |</td>
-            <td><a href="#projects">Proyek</a> |</td>
-            <td><a href="#contact">Kontak</a></td>
-            <td><a href="blog.html">blog</a></td>
-            
-          </tr>
-        </table>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
       </nav>
     </header>
 
-    <hr />
-
-    <section id="about">
+    <section id="tentang">
       <h2>Tentang Saya</h2>
-      <img src="foto.jpg.jpg" width="150px" />
-      <p>
-        <p>Yohanes Marianus Meo</p>
-        adalah seorang Mahasiswa PNB Jurusan TI dan saya menggambil Prodi
-        TRPL.saya lulusan SMK Vicentius Ndona Jurusan LISTRIK.
-      </p>
+      <div
+        class="about-section"
+        style="display: flex; align-items: center; flex-wrap: wrap"
+      >
+        <img src="foto.jpg.jpg" alt="Foto Profil" class="profile-image" />
+        <div class="about-text">
+          <p>
+            Saya adalah mahasiswa PNB Jurusan TI, Prodi TRPL. Lulusan SMK
+            Vicentius Ndona Jurusan LISTRIK. Saya memiliki minat dalam
+            pengembangan web, pemrograman, dan teknologi informasi.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <hr />
-
+    <hr class="pemisah" />
     <section id="skills">
       <h2>Keahlian</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Laravel</li>
-        <li>Database MySQL</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+            width="80"
+            height="80"
+          />
+          <p>HTML5</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+            width="80"
+            height="80"
+          />
+          <p>CSS3</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            width="80"
+            height="80"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React.js"
+            width="80"
+            height="80"
+          />
+          <p>React.js</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+            width="80"
+            height="80"
+          />
+          <p>Node.js</p>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySQL"
+            width="80"
+            height="80"
+          />
+          <p>MySQL</p>
+        </div>
+      </div>
     </section>
-
-    <hr />
+    <hr class="pemisah" />
 
     <section id="projects">
       <h2>Proyek Saya</h2>
@@ -64,28 +115,61 @@
       </article>
     </section>
 
-    <hr />
-
+    <hr class="pemisah" />
     <section id="contact">
       <h2>Kontak</h2>
       <form>
-        <label for="name">Marno:</label>
-        <input type="text" id="YOHANES " required /><br /><br />
+        <label for="name">Nama:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value="Yohanes Marianus Meo"
+          readonly
+        />
 
         <label for="email">Email:</label>
-        <input type="email" id="name" required /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="marnomeo7@gmail.com"
+          readonly
+        />
 
-        <label for="message">Pesan:</label><br />
-        <textarea id="message" rows="4" required></textarea><br /><br />
+        <label for="message">Pesan:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Hallow! silakan hubungi saya untuk kolaborasi atau pertanyaan lainnya"
+        ></textarea>
 
         <button type="submit">Kirim</button>
       </form>
     </section>
 
-    <hr />
-
     <footer>
-      <p>&copy; 2025 Marno. Semua Hak Dilindungi.</p>
+      <p>&copy; 2025 Yohanes Marianus Meo. Semua Hak Dilindungi.</p>
+      <div class="sosial-icon">
+        <a href="https://wa.me/081353960277" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://instagram.com/marnomeo_05"
+          target="_blank"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://tiktok.com/@marnomeo_05"
+          target="_blank"
+          title="TikTok"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
