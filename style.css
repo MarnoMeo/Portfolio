@@ -13,15 +13,34 @@ header h1 {
   font-size: 2.5rem;
   letter-spacing: 1px;
 }
+
 .profile-image {
+  display: block;
+  margin: 0 auto; /* Ini membuat gambar berada di tengah horizontal */
   width: 180px;
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-right: 30px;
-  margin-bottom: 20px;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tenggah {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-text {
+  max-width: 600px;
 }
 
 .profile-image:hover {
@@ -46,7 +65,7 @@ header nav ul {
 }
 
 body {
-  background: linear-gradient(-45deg, #002b5c, #00a5e621, #f4f6fa, #ffd700);
+  background: linear-gradient(-45deg, #002b5c, #00a5e638, #f4f6fa, #ffd700);
   background-size: 400% 400%;
   animation: bgShift 20s ease infinite;
 }
